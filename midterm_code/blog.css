@@ -37,3 +37,64 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.25rem;
   color: #727272;
 }
+
+
+#stylePref{
+  text-align: center;
+}
+
+.picture{
+  
+  margin-right: 0px;
+  margin-left:inherit;
+  margin-top:10px;
+  margin-bottom:10px;
+
+  padding-top: 0px; 
+  padding-bottom: 0px;
+}
+
+.fig{
+  margin-top:0px;
+  margin-right:0px;
+
+  padding-right:0px
+}
+.raspberry{
+  margin-left: 150px;
+  margin-right:0px;
+}
+
+.fst-italic{
+  margin-bottom:10px;
+}
+
+.column{
+  float:left;
+  width:50%;
+  padding:10px;
+  height:400px;
+}
+
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.classtitle{
+  border-left-width: 15px;
+  border-right-width: 15px;
+  font-size:larger;
+  text-align:left;
+}
+
+.students{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.instructor{
+  text-decoration: underline;
+  font-weight: bold;
+}
