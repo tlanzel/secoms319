@@ -12,7 +12,7 @@ fetch("./data.json")
 
 
 function append(data) {
-    if (data.t > 75) {
+    if (data.t > 68) {
         addPicture("./images/tshirt.png")
         addPicture("./images/shorts.png")
 
