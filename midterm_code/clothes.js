@@ -1,5 +1,5 @@
 
-fetch("./weather.json")
+fetch("./data.json")
     .then(function (response) {
         return response.json()
     })
@@ -13,7 +13,7 @@ fetch("./weather.json")
 
 function append(data) {
     if (data.t > 75) {
-        addPicture("./tshirt.png")
+        addPicture("./images/tshirt.png")
         addPicture("./images/shorts.png")
 
     }
@@ -47,7 +47,7 @@ function addPicture(picturelink) {
     node.style.fontWeight = "bold";
     node.style.fontSize = "25px";
 
-    if (picturelink == "./tshirt.png") {
+    if (picturelink == "./images/tshirt.png") {
         node.append("T-shirt")
        
     }
@@ -60,7 +60,7 @@ function addPicture(picturelink) {
     else if (picturelink == "./images/pants.png") {
         node.append("Pants")
     }
-    else if (picturelink == "./images/swearshirt.png") {
+    else if (picturelink == "./images/sweatshirt.png") {
         node.append("Sweatshirt")
     }
     else if (picturelink == "./images/coat.png") {
