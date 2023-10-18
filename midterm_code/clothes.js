@@ -13,25 +13,25 @@ fetch("./weather.json")
 
 function append(data) {
     if (data.t > 75) {
-        addPicture("./tshirt.png")
-        addPicture("./shorts.png")
+        addPicture("./images/tshirt.png")
+        addPicture("./images/shorts.png")
 
     }
     else if (data.t > 60) {
-        addPicture("./longsleeve.png")
-        addPicture("./shorts.png")
+        addPicture("./images/longsleeve.png")
+        addPicture("./images/shorts.png")
     }
     else if (data.t > 50) {
-        addPicture("./longsleeve.png")
-        addPicture("./pants.png")
+        addPicture("./images/longsleeve.png")
+        addPicture("./images/pants.png")
     }
     else if (data.t > 45) {
-        addPicture("./sweatshirt.png")
-        addPicture("./pants.png")
+        addPicture("./images/sweatshirt.png")
+        addPicture("./images/pants.png")
     }
     else {
-        addPicture("./coat.png")
-        addPicture("./pants.png")
+        addPicture("./images/coat.png")
+        addPicture("./images/pants.png")
     }
 }
 
@@ -47,23 +47,23 @@ function addPicture(picturelink) {
     node.style.fontWeight = "bold";
     node.style.fontSize = "25px";
 
-    if (picturelink == "./tshirt.png") {
+    if (picturelink == "./images/tshirt.png") {
         node.append("T-shirt")
        
     }
-    else if (picturelink == "./shorts.png") {
+    else if (picturelink == "./images/shorts.png") {
         node.append("Shorts")
     }
-    else if (picturelink == "./longsleeve.png") {
+    else if (picturelink == "./images/longsleeve.png") {
         node.append("Longsleeve")
     }
-    else if (picturelink == "./pants.png") {
+    else if (picturelink == "./images/pants.png") {
         node.append("Pants")
     }
-    else if (picturelink == "./swearshirt.png") {
+    else if (picturelink == "./images/swearshirt.png") {
         node.append("Sweatshirt")
     }
-    else if (picturelink == "./coat.png") {
+    else if (picturelink == "./images/coat.png") {
         node.append("Coat")
     }
 
